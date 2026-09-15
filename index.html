@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>祝浩翔 Haoxiang Zhu · Profile</title>
+<style>
+  :root { --fg:#1f2328; --muted:#57606a; --line:#d0d7de; --link:#0969da; --bg:#ffffff; --soft:#f6f8fa; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e6edf3; --muted:#8b949e; --line:#30363d; --link:#4493f8; --bg:#0d1117; --soft:#161b22; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.7 -apple-system,"Segoe UI","Microsoft YaHei",Helvetica,Arial,sans-serif; }
+  .wrap { max-width:860px; margin:0 auto; padding:40px 22px 72px; }
+  h1 { font-size:30px; margin:0 0 6px; letter-spacing:.2px; }
+  h2 { font-size:19px; margin:34px 0 12px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+  .tag { color:var(--muted); font-size:15px; margin:0 0 4px; }
+  .badges { margin:14px 0 4px; display:flex; flex-wrap:wrap; gap:8px; }
+  .badge { font-size:12.5px; color:var(--muted); background:var(--soft);
+           border:1px solid var(--line); border-radius:999px; padding:3px 11px; }
+  ul { padding-left:22px; margin:8px 0; }
+  li { margin:5px 0; }
+  a { color:var(--link); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  table { width:100%; border-collapse:collapse; margin:10px 0; font-size:15px; }
+  th,td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--soft); font-weight:600; }
+  code { background:var(--soft); border:1px solid var(--line); border-radius:5px; padding:1px 5px; font-size:13.5px; }
+  .resume { background:var(--soft); border:1px solid var(--line); border-radius:10px; padding:16px 18px; margin-top:12px; }
+  .resume a { font-weight:600; }
+  .muted { color:var(--muted); font-size:14px; }
+  footer { margin-top:44px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>祝浩翔 · Haoxiang Zhu</h1>
+  <p class="tag"><b>EN</b> — ICS undergraduate at XJTLU. Focus: <b>AI Infra · Agents · LLM Architecture</b>. I build agent tooling and care about on-device agent deployment and reinforcement learning (RLHF / DPO).</p>
+  <p class="tag"><b>中文</b> — 西交利物浦大学 信息与计算科学（ICS）大二在读。关注 <b>AI Infra / Agent / LLM 架构（算法架构）</b>，做实 Agent 工具链，关注端侧 Agent 部署与强化学习（RLHF · DPO）。</p>
+
+  <div class="badges">
+    <span class="badge">focus · AI Infra / Agents / LLM Architecture</span>
+    <span class="badge">stack · Python / C / C++</span>
+    <span class="badge">robotics · ROS2 / Nav2 / OpenCV</span>
+    <span class="badge">XJTLU · ICS</span>
+  </div>
+
+  <h2>现在在做什么 · What I'm working on</h2>
+  <ul>
+    <li><b>Agent 工具链</b> — DSH Web GUI 事件钩子插件 <a href="https://github.com/zhuhaoxiangAndy/dsh-alert-chime">dsh-alert-chime</a>（约 1,133 行、零运行时依赖）；以及 DSH 会话日志工作台 <code>dsh-session-studio</code>（源码私有，公开入口是下面的单文件发布版）。</li>
+    <li><b>端侧 Agent 部署</b> — 让 agent 工具链在本机真正可用：单文件、双击即用，不依赖额外运行时。</li>
+    <li><b>RoboMaster 哨兵</b> — GMaster 战队机器人方向，做感知与端侧部署相关的工程实践。</li>
+    <li><b>强化学习</b> — 系统学习 RLHF / DPO 与工具调用相关的后训练方法。</li>
+  </ul>
+
+  <h2>开源项目 · Open Source</h2>
+  <table>
+    <tr><th>项目</th><th>说明</th><th>链接</th></tr>
+    <tr>
+      <td><b>dsh-alert-chime</b></td>
+      <td>DSH Web GUI 事件钩子提示音插件：host + client 两部分、约 1,133 行、零运行时依赖</td>
+      <td><a href="https://github.com/zhuhaoxiangAndy/dsh-alert-chime">repo</a></td>
+    </tr>
+    <tr>
+      <td><b>dsh-session-studio</b><br><span class="muted">（公开发布版）</span></td>
+      <td>DSH 会话日志工作台，单文件版公开发布、双击即用、含 MIT LICENSE。源码仓库私有，此处是唯一公开入口</td>
+      <td><a href="https://github.com/zhuhaoxiangAndy/dsh-session-studio-release">repo</a></td>
+    </tr>
+    <tr>
+      <td><b>RealTimeAccPhigros</b></td>
+      <td>Phigros 实时 ACC 监控（Python）</td>
+      <td><a href="https://github.com/zhuhaoxiangAndy/RealTimeAccPhigros">repo</a></td>
+    </tr>
+    <tr>
+      <td><b>XJTLU-EAP047-AY2526</b></td>
+      <td>课程资料存档</td>
+      <td><a href="https://github.com/zhuhaoxiangAndy/XJTLU-EAP047-AY2526">repo</a></td>
+    </tr>
+  </table>
+
+  <h2>社区与协作 · Community</h2>
+  <ul>
+    <li><b>DeepSeek Harness Discussions</b> — 提交结构化 Bug 报告 <a href="https://github.com/deepseek-ai/deepseek-harness/discussions/6659">#6659</a>；在 <a href="https://github.com/deepseek-ai/deepseek-harness/discussions/6658">#6658</a> 里回复提问。</li>
+    <li><b>dsh-TUI PR <a href="https://github.com/ccch1mneyyy/dsh-TUI/pull/894">#894</a></b> — 为状态栏加子代理计数；走完 CodeRabbit 全量 review；因仓库白名单门禁被自动关闭，等待维护者 reopen。</li>
+    <li><b>GMaster 队内协作</b> — 按队内类 PR 流程推进（分支 → 提交 → review → 合并）。</li>
+  </ul>
+
+  <h2>简历 · Resume</h2>
+  <div class="resume">
+    <p style="margin:0 0 6px"><a href="./resumes/HaoxiangZhu-GMaster-Robotics-Resume.pdf">祝浩翔 · GMaster 机器人方向简历（PDF，2 页）</a></p>
+    <p class="muted" style="margin:0">中文简历《祝浩翔-GMaster机器人方向-简历.pdf》。对外使用英文文件名，便于命令行与跨平台引用。</p>
+  </div>
+
+  <h2>技能 · Skills</h2>
+  <ul>
+    <li><b>语言</b>：Python · C/C++</li>
+    <li><b>机器学习</b>：PyTorch · Transformers</li>
+    <li><b>机器人与感知</b>：OpenCV · ROS2 · Nav2</li>
+    <li><b>工具链</b>：Linux / WSL · Git</li>
+  </ul>
+
+  <footer>
+    联系 · Contact — GitHub：<a href="https://github.com/zhuhaoxiangAndy">@zhuhaoxiangAndy</a><br>
+    反馈与交流：欢迎在相关仓库开 Issue，或在 DeepSeek Harness Discussions 里 @ 我。
+  </footer>
+
+</div>
+</body>
+</html>
